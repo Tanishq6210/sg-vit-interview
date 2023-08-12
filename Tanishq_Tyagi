@@ -1,0 +1,46 @@
+// Implementing abstract class. Business Logic - Interview Process.
+
+import java.util.*;
+
+class PrincipalOffice {
+
+    static void callingHOD() {
+
+    }
+}
+
+abstract class Interview  {
+    abstract void problemSolving() ;
+    
+    abstract void codingSkills();
+
+    void  feedback() {
+        System.out.println("Feedback printed");
+    }
+}
+
+// Scenerio 1
+class Technical extends Interview {
+    void problemSolving() {
+        
+    }
+
+    void codingSkills() {
+
+    }
+}
+
+//Scenerio 2
+// Since the Manegerial class is extending the base class Interview. But as the Interview is having the abstract methods
+class Manegerial extends Interview {
+
+}
+
+public class PrincipalOffice1 {
+    public static void main(String args[]) {
+        PrincipalOffice.callingHOD();
+
+        Technical d = new Technical();
+        d.feedback();
+    }
+}
